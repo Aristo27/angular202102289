@@ -13,6 +13,7 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
+import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { Dashboard3Component } from './dashboard3/dashboard3.component';
     ContentComponent,
     FooterComponent,
     Dashboard2Component,
-    Dashboard3Component
+    Dashboard3Component,
+    MahasiswaComponent
   ],
   imports: [
     BrowserModule,
