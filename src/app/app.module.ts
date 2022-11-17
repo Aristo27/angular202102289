@@ -14,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
+import { HttpClientModule} from "@angular/common/http";
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,13 @@ import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    //ServiceWorkerModule.register('ngsw-worker.js', {
+      //enabled: environment.production,
+      
+      //registrationStrategy: 'registerWhenStable:30000'
+    //})
   ],
   providers: [],
   bootstrap: [AppComponent]
